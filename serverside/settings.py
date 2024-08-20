@@ -15,7 +15,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-b1ab8sd$ah(m-j0vf%q*ssgt0&x0y8%3v@3)ekr(-vboj)4*q$"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -82,11 +82,11 @@ MIDDLEWARE = [
 
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',
+    'https://deploy-kenya-data-viz-frontend.vercel.app/',
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'http://localhost:5173',
+    'https://deploy-kenya-data-viz-frontend.vercel.app/',
 ]
 
 CORS_ALLOW_CREDENTIALS = True
